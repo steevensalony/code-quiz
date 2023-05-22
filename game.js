@@ -55,3 +55,27 @@ var questions = [
     answer: 3
   }
 ]
+
+function getNewQuestion () {
+  var nextQuestion = 0;
+  // Ending the quiz when there are no more questions
+  if (questionRemaining.length === 0 || nextQuestion >= numberOfQuestion) {
+    // Saving the high scores to local storage
+    localStorage.setItem('highScore', score);
+    return window.location.assign("./end.html");
+  }
+
+  nextQuestion++;
+  // Getting a random question from our choices(stackoverflow.com)
+  var randomQuestion = Math.floor(Math.random() * questionRemaining.length);
+  currentQuestion = questionRemaining[randomQuestion];
+  question.innerText = currentQuestion.question;
+
+  // Getting the answer choices to the questions
+  Array.from(choices).forEach(choice => {
+    var number = choice.dataset['number'];
+    choice.innerText = currentQuestion['choice' + number];
+  });
+
+  questionRemaining.splice(randomQuestion, 1);
+};
