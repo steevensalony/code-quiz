@@ -60,7 +60,7 @@ var questions = [
 var points = 10;
 var numberOfQuestion = 5;
 
-function startQuiz () {
+function startQuiz() {
   // Using the spread operator to get a new array
   timerCount = 20;
   questionRemaining = [...questions];
@@ -68,7 +68,7 @@ function startQuiz () {
   getNewQuestion();
 }
 
-function getNewQuestion () {
+function getNewQuestion() {
   var nextQuestion = 0;
   // Ending the quiz when there are no more questions
   if (questionRemaining.length === 0 || nextQuestion >= numberOfQuestion) {
@@ -118,7 +118,7 @@ Array.from(choices).forEach(choice => {
 
 function startTimer() {
   // Sets timer
-  timer = setInterval(function() {
+  timer = setInterval(function () {
     timerCount--;
     timerEl.textContent = timerCount;
     // Tests if time has run out
@@ -135,7 +135,7 @@ function startTimer() {
 }
 
 // checking the score
-function incrementScore (num) {
+function incrementScore(num) {
   score += num;
   scoreCount.innerText = score;
 }
