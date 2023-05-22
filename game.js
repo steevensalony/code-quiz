@@ -79,3 +79,27 @@ function getNewQuestion () {
 
   questionRemaining.splice(randomQuestion, 1);
 };
+
+Array.from(choices).forEach(choice => {
+  choice.addEventListener('click', Event => {
+    var selectedChoice = Event.target;
+    var selectedAnswer = selectedChoice.dataset['number'];
+
+    //checking correct and incorrect answers
+    var classToApply = selectedAnswer == currentQuestion.answer ? 'correct' : 'incorrect';
+
+    //updating score
+    if (classToApply === 'correct') {
+      incrementScore(points);
+    } else if (classToApply === 'incorrect') {
+      timerCount = timerCount - 5;
+    }
+
+    selectedChoice.parentElement.classList.add(classToApply);
+
+    setTimeout(() => {
+      selectedChoice.parentElement.classList.remove(classToApply)
+      getNewQuestion()
+    }, 1000);
+  })
+})
