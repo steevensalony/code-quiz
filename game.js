@@ -103,3 +103,21 @@ Array.from(choices).forEach(choice => {
     }, 1000);
   })
 })
+
+function startTimer() {
+  // Sets timer
+  timer = setInterval(function() {
+    timerCount--;
+    timerEl.textContent = timerCount;
+    // Tests if time has run out
+    if (timerCount === 0) {
+      // Clears interval
+      clearInterval(timer);
+      localStorage.setItem('highScore', score);
+      return window.location.assign("./end.html");
+    }
+    if (timerCount <= 9) {
+      document.getElementById("time").style.color = "red";
+    }
+  }, 1000);
+}
