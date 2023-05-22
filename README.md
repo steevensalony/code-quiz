@@ -11,7 +11,7 @@ This was a challenge given by our bootcamp instructors
 ## Instalation
 
 To install this code, simply click on the url to my repository [https://github.com/steevensalony/code-quiz] and clone the ssh key to your local machine. 
-this is also the link to the website https://steevensalony.github.io/weather-dashboard
+this is also the link to the website https://steevensalony.github.io/code-quiz/
 
 ## Usage
 
@@ -21,7 +21,6 @@ The main use of this application is to be used to test you knowledge in several 
 
 Rutgers Bootcamp.
 https://www.w3schools.com/js/
-https://openweathermap.org/forecast5
 
 # License
 
