@@ -56,6 +56,18 @@ var questions = [
   }
 ]
 
+// constants
+var points = 10;
+var numberOfQuestion = 5;
+
+function startQuiz () {
+  // Using the spread operator to get a new array
+  timerCount = 20;
+  questionRemaining = [...questions];
+  startTimer();
+  getNewQuestion();
+}
+
 function getNewQuestion () {
   var nextQuestion = 0;
   // Ending the quiz when there are no more questions
@@ -121,3 +133,11 @@ function startTimer() {
     }
   }, 1000);
 }
+
+// checking the score
+function incrementScore (num) {
+  score += num;
+  scoreCount.innerText = score;
+}
+
+startQuiz()
