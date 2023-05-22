@@ -4,18 +4,18 @@
 
 ## Description
 
-A weather application that display the weather for today and five days after
+A timed coding quiz application with multiple choice questions.
 
 This was a challenge given by our bootcamp instructors
 
 ## Instalation
 
-To install this code, simply click on the url to my repository [https://github.com/steevensalony/weather-dashboard] and clone the ssh key to your local machine. 
+To install this code, simply click on the url to my repository [https://github.com/steevensalony/code-quiz] and clone the ssh key to your local machine. 
 this is also the link to the website https://steevensalony.github.io/weather-dashboard
 
 ## Usage
 
-The main use of this application is to generate weather data whenever the user enters the name of a city. The application also returns data for the next five days. The application also saves the user's search to local storage, and shows the user search history on the page. The user can then click on any of their previous search to get the weather data for that city again.
+The main use of this application is to be used to test you knowledge in several different coding topics. You have a set amount of time to answer some multiple choice questions. Game ends once you've answered all the questions or you ran out of time. Your score is saved and is added to the highscores list if it is a top score. If you think you can do better, play again!
 
 ## Credits
 
