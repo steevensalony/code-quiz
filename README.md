@@ -1,6 +1,6 @@
 # code-quiz
 
-![](https://github.com/steevensalony/weather-dashboard/blob/main/assets/images/Screenshot%202023-02-24%20at%208.42.57%20PM.png)
+<img width="2240" alt="Screenshot 2023-05-22 at 11 44 10 AM" src="https://github.com/steevensalony/code-quiz/assets/108702715/75535cd9-ded0-4069-a9c3-2731b5fe11de">
 
 ## Description
 
